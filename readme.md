@@ -22,5 +22,6 @@
 ﹒[Discord Server](https://discord.gg/NNqNFH6h2j)
 
 **Developers**
+
 ﹒[3exyDevil](https://github.com/3exyDevil)
 ﹒[Dark_Night45](https://discords.com/bio/p/darknight45)
