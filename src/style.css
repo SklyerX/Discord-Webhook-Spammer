@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+body {
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+}
+button:disabled,
+button[disabled] {
+  opacity: 0.5;
+}
+
+::selection{
+  background-color: #D3D3D3;
+  color: #343434
+}
+
+button{
+  outline: none;
+  border: 0;
+  cursor: pointer
+}
+
+main {
+    display: block;
+    margin-top: 50px;
+    max-width: 1100px;
+}
+
+code {
+  font-size: 12px;
+  font-family: monospace;
+  text-align: left;
+  line-height: 20px;
+}
+.h #log{
+  opacity: 1
+}
+
+#log{
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  text-align: left;
+  opacity: 0;
+  transition: 500ms;
+  margin-bottom: 10px;
+}
+
+.box{
+  display: inline-block;
+  margin: 1.5%;
+  font-size: 17px;
+  max-width: 900px
+}
+
+input {
+    border-radius: 8px;
+    width: 250pt;
+    background: #2C2C2C;
+    color: white;
+    border: 1.5px solid #2C2C2C;
+    outline: none;
+    transition: .5s;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+input:focus{
+  border-color: white
+}
+
+main p{
+  font-weight: 600;
+  padding-top: 5px;
+  margin-bottom: 8px;
+font-family: 'Poppins', sans-serif;
+cursor: help;
+}
+
+main p span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  opacity: .5;
+  margin-right: -25px
+}
+
+#button{
+ background: linear-gradient(-45deg,#DE0099,#A200DE,#0092DE);
+ margin: 15px;
+ border-radius: 10px;
+ color: white;
+ font-weight: 500;
+ font-size: 16px;
+ background-size: 400% 400%;
+background-position: 0% 50%;
+  transition: 1s;
+  padding: 12px 110px;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+main div a{ text-decoration: none; color: white}
+  
+#button:hover{
+  background-position: 100% 50%;
+}
+@keyframes button{
+0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+hr{
+  color: #FFFFFF;
+  width: 90%;
+  border-top: 5px;
+  border-color: #FFFFFF;
+}
+
+#head{
+  background: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  text-align: center;
+  height: 50px;
+  color: black;
+  box-shadow: 0 0px 22px black;
+  font-family: 'Poppins', sans-serif;
+  
+}
+#head h1{
+ left: 0; position: fixed; margin-top: 1px;margin-left: 15px;font-size: 1.250em /*20px*/;cursor: default;font-weight: 600;
+}
+
+#himg{
+  width: 30px;position: relative;top: 7px
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(42, 42, 43);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgb(89, 89, 90);
+border-radius: 1px;
+}
+
+footer{
+  background: linear-gradient(180deg,#0E0E0E ,#3B3B3B);
+  width: 100%;
+  height: 35px;
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+  
+#cr{
+  opacity: 0;
+  color: white;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+  animation: 20s cr ease;
+}
+
+@keyframes cr {
+  0%{opacity: 1}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}
+
+footer a{
+  color: #FF79EB;
+  text-decoration-style: dotted;
+}
+
+#a{margin-left: 5px;margin-right: 5px}
+
+#support{
+  margin-top: 4px;
+  margin-right: 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 500ms;
+  background: #F5F5F5;
+  border-radius: 100px;
+}
+
+
+span{
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace
+}
+
+.menu{
+  font-size: 25px;
+  position: fixed;
+  right: 0;
+  margin-top: 8px;
+  margin-right: -40px;
+  top: 0;
+  text-decoration: none;
+  color: #000000;
+  transition: .5s;
+  width: 150px;
+  height: 100px;
+  cursor: default;
+}
+
+.menu:hover{
+  color: #787878;
+}
+
+.m-content {
+  display: none;
+  transition: display 500ms;
+  position: absolute;
+  min-width: 100pt;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+  right: 0;
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+  width: 235px;
+  height: 145px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 65px;
+  margin-right: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.m-content a {
+  text-decoration: none;
+    color: #FFFFFF;
+    background-color: #2D2D2D;
+    width: 215px;
+    height: 35px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 7.5px;
+    text-align: center;
+    transition: 500ms;
+    display: block;
+    font-size: 15px;
+}
+
+.mu:hover .m-content {
+  display: block;
+    transition: display 500ms;
+}
+
+.mu:hover .mbtn {
+  background-color: #3e8e41;
+}
+
+.m-content::after{
+  content: " ";
+position: absolute;
+  bottom: 100%; 
+  left: 90%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #E5E5E5 transparent; 
+}
+
+.m-content i{
+  color: #9882FF;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.br{
+  margin-bottom: 10px
+}
+
+#dev{
+  background-color: #01407B
+}
+#dev:hover{
+  background-color: #002C56
+}
+#devi{
+  color: #FFF79D;
+}
+
+.m-content a:hover{
+  background-color: #000000;
+}
+
+/* saat panje be mola */
