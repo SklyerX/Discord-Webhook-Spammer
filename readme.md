@@ -13,8 +13,9 @@
 ----------
 **Executable**
 
-- Press on the Discord Webhook Spammer.exe (this will not allow you to view the code)
-- You can also download it by clicking [here](https://github.com/SklyerX/Unfollow-Bot/releases/tag/v1)
+- Press on the console
+- Type `npm run build`
+- Go to the folder created. and press on the exe
 ----------
 **Contact Me**
 
